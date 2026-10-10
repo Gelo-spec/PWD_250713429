@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Lomba</title>
+</head>
+<body>
+
+    <h1>Formulir Pendaftaran Lomba</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <table cellspacing="4" cellpadding="4" border="1"
+               style="border-collapse:collapse; width:100%;">
+            <tr>
+                <th colspan="2">Data Tim</th>
+            </tr>
+            <tr>
+                <td style="width:32%;">Nama Tim</td>
+                <td><input type="text" name="nama_tim" /></td>
+            </tr>
+            <tr>
+                <td style="width:32%;">Nama Ketua</td>
+                <td><input type="text" name="nama_ketua" /></td>
+            </tr>
+            <tr>
+                <td style="width:32%;">Jumlah Anggota</td>
+                <td><input type="text" name="jumlah_anggota" /></td>
+            </tr>
+            <tr>
+                <td style="width:32%;">Program Studi</td>
+                <td>
+                    <select name="program_studi">
+                        <option value="Informatika">Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <br />
+
+        <table cellspacing="4" cellpadding="4" border="1"
+               style="border-collapse:collapse; width:100%;">
+            <tr>
+                <th colspan="2">Pilihan Lomba</th>
+            </tr>
+            <tr>
+                <td style="width:32%;">Kategori Lomba</td>
+                <td>
+                    <input type="radio" name="kategori_lomba"
+                           value="Individu" /> Individu
+                    <input type="radio" name="kategori_lomba"
+                           value="Kelompok" /> Kelompok
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">Bidang Lomba</td>
+                <td>
+                    <input type="checkbox" name="bidang_lomba"
+                           value="Programming" /> Programming
+                    <input type="checkbox" name="bidang_lomba"
+                           value="UI/UX Design" /> UI/UX Design
+                    <input type="checkbox" name="bidang_lomba"
+                           value="Karya Tulis" /> Karya Tulis
+                </td>
+            </tr>
+        </table>
+
+        <br />
+
+        <table cellspacing="4" cellpadding="4" border="1"
+               style="border-collapse:collapse; width:100%;">
+            <tr>
+                <th colspan="2">Informasi Karya</th>
+            </tr>
+            <tr>
+                <td style="width:32%;">Deskripsi Karya</td>
+                <td>
+                    <textarea name="deskripsi_karya"
+                              rows="5" cols="40"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">File Karya</td>
+                <td><input type="file" name="file_karya" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Daftar" />
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+</html>
