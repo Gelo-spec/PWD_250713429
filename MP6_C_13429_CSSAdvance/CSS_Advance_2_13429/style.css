@@ -1,0 +1,219 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #26332b;
+  background: #eef3ee;
+  padding: 36px 16px;
+}
+
+.halaman {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+
+.kepala {
+  background: #1f5d46;
+  color: #ffffff;
+  padding: 30px 34px;
+  border-radius: 14px 14px 0 0;
+  border-left: 8px solid #f26b3a;
+}
+
+.kepala h1 {
+  font-size: 1.65em;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.kepala p {
+  color: #d3e6dc;
+  font-size: 0.93em;
+}
+
+.bintang {
+  color: #f26b3a;
+  font-weight: bold;
+}
+
+/* ===== Kartu form ===== */
+.kartu {
+  background: #ffffff;
+  padding: 30px 34px 34px;
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0 8px 24px rgba(31, 93, 70, 0.15);
+}
+
+fieldset {
+  border: none;
+  border-top: 3px solid #1f5d46;
+  padding: 18px 0 6px;
+  margin-bottom: 26px;
+}
+
+legend {
+  background: #1f5d46;
+  color: #ffffff;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+
+.kolom {
+  margin-bottom: 18px;
+}
+
+label,
+.judul {
+  display: block;
+  font-weight: bold;
+  font-size: 0.88em;
+  color: #34493d;
+  margin-bottom: 6px;
+}
+
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 1em;
+  color: #26332b;
+  background: #f7faf7;
+  border: 1.5px solid #c3d1c7;
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #1f5d46;
+  box-shadow: 0 0 0 3px rgba(242, 107, 58, 0.3);
+}
+
+::placeholder {
+  color: #8da093;
+}
+
+
+.pilihan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+label.inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: normal;
+  font-size: 0.93em;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: #1f5d46;
+}
+
+
+.aksi {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tombol {
+  padding: 12px 28px;
+  font-family: inherit;
+  font-size: 0.95em;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.tombol:active {
+  transform: translateY(1px);
+}
+
+.utama {
+  background: #f26b3a;
+  color: #ffffff;
+  border: 2px solid #f26b3a;
+}
+
+.utama:hover {
+  background: #d9551f;
+  border-color: #d9551f;
+}
+
+.sekunder {
+  background: transparent;
+  color: #1f5d46;
+  border: 2px solid #c3d1c7;
+}
+
+.sekunder:hover {
+  border-color: #1f5d46;
+  background: #eef3ee;
+}
+
+.tombol:focus {
+  outline: 3px solid #1f5d46;
+  outline-offset: 2px;
+}
+
+
+.kaki {
+  text-align: center;
+  font-size: 0.82em;
+  color: #66796d;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .kepala,
+  .kartu {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .kepala h1 {
+    font-size: 1.3em;
+  }
+  .tombol {
+    width: 100%;
+  }
+}

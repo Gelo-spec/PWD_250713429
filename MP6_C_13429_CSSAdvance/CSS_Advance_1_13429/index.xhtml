@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Daftar Seminar Teknologi Informasi</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="header">
+      <h1>Amankan Kursimu di Seminar Teknologi Informasi</h1>
+      <p>Isi data di bawah ini dengan benar. Kolom bertanda <span class="wajib">*</span> wajib diisi.</p>
+    </div>
+
+    <form action="#" method="post" class="form">
+
+      <fieldset>
+        <legend>Data Diri</legend>
+
+        <div class="baris">
+          <label for="nama">Nama lengkap <span class="wajib">*</span></label>
+          <input type="text" id="nama" name="nama" placeholder="Contoh: Budi Santoso" />
+        </div>
+
+        <div class="baris">
+          <label for="email">Alamat email <span class="wajib">*</span></label>
+          <input type="text" id="email" name="email" placeholder="nama@email.com" />
+        </div>
+
+        <div class="baris">
+          <label for="hp">Nomor WhatsApp <span class="wajib">*</span></label>
+          <input type="text" id="hp" name="hp" placeholder="08xxxxxxxxxx" />
+        </div>
+
+        <div class="baris">
+          <span class="judul-kolom">Jenis kelamin</span>
+          <div class="pilihan">
+            <label class="inline"><input type="radio" name="gender" value="L" /> Laki-laki</label>
+            <label class="inline"><input type="radio" name="gender" value="P" /> Perempuan</label>
+          </div>
+        </div>
+
+        <div class="baris">
+          <label for="instansi">Asal kampus / instansi</label>
+          <input type="text" id="instansi" name="instansi" placeholder="Nama kampus atau tempat kerja" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Detail Kehadiran</legend>
+
+        <div class="baris">
+          <label for="sesi">Sesi yang ingin diikuti <span class="wajib">*</span></label>
+          <select id="sesi" name="sesi">
+            <option value="">-- Pilih sesi --</option>
+            <option value="ai">Kecerdasan Buatan untuk Pemula</option>
+            <option value="web">Membangun Website Modern</option>
+            <option value="data">Dasar Analisis Data</option>
+            <option value="sec">Keamanan Siber di Era Digital</option>
+          </select>
+        </div>
+
+        <div class="baris">
+          <label for="tanggal">Tanggal kehadiran</label>
+          <input type="text" id="tanggal" name="tanggal" placeholder="hh/bb/tttt" />
+        </div>
+
+        <div class="baris">
+          <span class="judul-kolom">Dari mana kamu tahu seminar ini?</span>
+          <div class="pilihan">
+            <label class="inline"><input type="checkbox" name="info" value="sosmed" /> Media sosial</label>
+            <label class="inline"><input type="checkbox" name="info" value="teman" /> Teman</label>
+            <label class="inline"><input type="checkbox" name="info" value="kampus" /> Informasi kampus</label>
+          </div>
+        </div>
+
+        <div class="baris">
+          <label for="harapan">Harapanmu setelah mengikuti seminar</label>
+          <textarea id="harapan" name="harapan" rows="4" cols="40" placeholder="Tulis singkat di sini..."></textarea>
+        </div>
+      </fieldset>
+
+      <div class="tombol">
+        <input type="submit" value="Kirim Pendaftaran" class="btn kirim" />
+      </div>
+
+    </form>
+
+    <p class="footer">&#169; 2026 Panitia Seminar Teknologi Informasi</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Pendaftaran Lomba Kreativitas Mahasiswa</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="halaman">
+
+    <div class="kepala">
+      <h1>Ayo Ikut Lomba Kreativitas Mahasiswa!</h1>
+      <p>Lengkapi formulir berikut untuk mendaftarkan diri atau timmu. Tanda <span class="bintang">*</span> berarti wajib diisi.</p>
+    </div>
+
+    <form action="#" method="post" class="kartu">
+
+      <fieldset>
+        <legend>Informasi Peserta</legend>
+
+        <div class="grid">
+          <div class="kolom">
+            <label for="nama">Nama ketua / peserta <span class="bintang">*</span></label>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap" />
+          </div>
+
+          <div class="kolom">
+            <label for="npm">NPM <span class="bintang">*</span></label>
+            <input type="text" id="npm" name="npm" placeholder="Nomor pokok mahasiswa" />
+          </div>
+
+          <div class="kolom">
+            <label for="email">Email aktif <span class="bintang">*</span></label>
+            <input type="text" id="email" name="email" placeholder="nama@email.com" />
+          </div>
+
+          <div class="kolom">
+            <label for="hp">Nomor telepon <span class="bintang">*</span></label>
+            <input type="text" id="hp" name="hp" placeholder="08xxxxxxxxxx" />
+          </div>
+        </div>
+
+        <div class="kolom penuh">
+          <label for="kampus">Asal kampus dan program studi</label>
+          <input type="text" id="kampus" name="kampus" placeholder="Contoh: Universitas ABC - Informatika" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pilihan Lomba</legend>
+
+        <div class="kolom penuh">
+          <label for="lomba">Cabang lomba <span class="bintang">*</span></label>
+          <select id="lomba" name="lomba">
+            <option value="">-- Pilih cabang lomba --</option>
+            <option value="web">Desain Website</option>
+            <option value="poster">Desain Poster Digital</option>
+            <option value="coding">Kompetisi Pemrograman</option>
+            <option value="video">Video Pendek Kreatif</option>
+          </select>
+        </div>
+
+        <div class="kolom penuh">
+          <span class="judul">Bentuk keikutsertaan</span>
+          <div class="pilihan">
+            <label class="inline"><input type="radio" name="tipe" value="individu" /> Perorangan</label>
+            <label class="inline"><input type="radio" name="tipe" value="tim" /> Tim</label>
+          </div>
+        </div>
+
+        <div class="kolom penuh">
+          <label for="tim">Nama tim (jika mendaftar sebagai tim)</label>
+          <input type="text" id="tim" name="tim" placeholder="Nama tim kamu" />
+        </div>
+
+        <div class="kolom penuh">
+          <span class="judul">Kebutuhan tambahan</span>
+          <div class="pilihan">
+            <label class="inline"><input type="checkbox" name="butuh" value="wifi" /> Akses Wi-Fi</label>
+            <label class="inline"><input type="checkbox" name="butuh" value="listrik" /> Colokan listrik</label>
+            <label class="inline"><input type="checkbox" name="butuh" value="konsumsi" /> Konsumsi</label>
+          </div>
+        </div>
+
+        <div class="kolom penuh">
+          <label for="motivasi">Alasan ingin mengikuti lomba ini</label>
+          <textarea id="motivasi" name="motivasi" rows="4" cols="40" placeholder="Ceritakan motivasimu secara singkat..."></textarea>
+        </div>
+      </fieldset>
+
+      <div class="aksi">
+        <input type="submit" value="Daftar Sekarang" class="tombol utama" />
+      </div>
+
+    </form>
+
+    <p class="kaki">&#169; 2026 Panitia Lomba Kreativitas Mahasiswa</p>
+  </div>
+</body>
+</html>
